@@ -1,0 +1,4 @@
+language: java
+jdk:
+   -java-8-openjdk-amd64
+script: ant build
