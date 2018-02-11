@@ -8,8 +8,10 @@ env:
    secure: SPC375DfzOgwadHvT8iZWucYzj6962i5jivUHJpl41keEicMebnqX7de3qDqDfQ43vuOvDKN9FPnuva22CshwSKMb3U1D+V2EfP1yD6Xd2A+TPe6XOgn/9OfIPPkqlsJgnVZZfH68gXgje9O3MuSn3zrZ2CsMFiGEIK0u5hKHQH3uVHZSyyO9kd2eOn/fbe8+MhWMDLUEK69Gr+MNh+RCmui+zkVqrjdPGbPu+loGmATei/+obs131ioYNyc6+eBj8XfhZX0u+XGAffxFcXEx3cejdERDz4Lpb4RJJrYJ5CfrQ3pGT8eHx8GmZM6IdyvsLYr8Exsn5CX9iYe+GceSa/SN/et68tzh7230VhYsi/QPVlSlApNV0XCJntDFWgZ21a8UFMI4DAG75L8Yg5AGVkOsQcPfRPOsiiWi/tvTj1fQ3dOEfCc1pTeosDMxi/Fz9IOfwG3hyUh6cPhOhbCjv6ZHHpMkYyPn/fSP6Kjpn4bu2/BSfutnVJ+UuY1mqMOjK76uHEVlQXIQzgKXRviU1o+eXVkW3tz5uEmzVYPDVtLOwwHTZwgIvmhSBlYUGj97OIJs15ZN0322+8bwJ96oB1s2AA2YCUbTxtojyT8L7UbN/Hm/oSOZgzNj4nzXhC4xDOf+w3+s9u2IteX0mtAy4m3d8Mf0m/O6x1PtbZ/cks=
 
 addons:
-  sonarcloud:
-      organization: "continuous-integration" # the key of the org you chose at step #3
+   sonarcloud:
+   organization: "continuous-integration" # the key of the org you chose at step #3
+   token:
+      secure: SPC375DfzOgwadHvT8iZWucYzj6962i5jivUHJpl41keEicMebnqX7de3qDqDfQ43vuOvDKN9FPnuva22CshwSKMb3U1D+V2EfP1yD6Xd2A+TPe6XOgn/9OfIPPkqlsJgnVZZfH68gXgje9O3MuSn3zrZ2CsMFiGEIK0u5hKHQH3uVHZSyyO9kd2eOn/fbe8+MhWMDLUEK69Gr+MNh+RCmui+zkVqrjdPGbPu+loGmATei/+obs131ioYNyc6+eBj8XfhZX0u+XGAffxFcXEx3cejdERDz4Lpb4RJJrYJ5CfrQ3pGT8eHx8GmZM6IdyvsLYr8Exsn5CX9iYe+GceSa/SN/et68tzh7230VhYsi/QPVlSlApNV0XCJntDFWgZ21a8UFMI4DAG75L8Yg5AGVkOsQcPfRPOsiiWi/tvTj1fQ3dOEfCc1pTeosDMxi/Fz9IOfwG3hyUh6cPhOhbCjv6ZHHpMkYyPn/fSP6Kjpn4bu2/BSfutnVJ+UuY1mqMOjK76uHEVlQXIQzgKXRviU1o+eXVkW3tz5uEmzVYPDVtLOwwHTZwgIvmhSBlYUGj97OIJs15ZN0322+8bwJ96oB1s2AA2YCUbTxtojyT8L7UbN/Hm/oSOZgzNj4nzXhC4xDOf+w3+s9u2IteX0mtAy4m3d8Mf0m/O6x1PtbZ/cks=
 script:
    # other script steps might be done before running the actual analysis
    - sonar-scanner
