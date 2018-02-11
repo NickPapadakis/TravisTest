@@ -1,0 +1,7 @@
+organization=continuous-integration
+projectKey=nick.travis.test:Thing
+serverUrl=https://sonarcloud.io
+serverVersion=7.1.0.36111
+dashboardUrl=https://sonarcloud.io/dashboard/index/nick.travis.test:Thing
+ceTaskId=AWGHRWPBygQAAyqqj7ua
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWGHRWPBygQAAyqqj7ua
