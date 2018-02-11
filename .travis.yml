@@ -10,8 +10,6 @@ env:
 addons:
    sonarcloud:
    organization: "continuous-integration" # the key of the org you chose at step #3
-   token:
-      secure: BMeiFdYBi9XSflHpOblLbwLfv+cLpcRx4TylRFkp8Z+VC0xrsfvhkVr6ThvzDUyRE1gQiK3GrS3NJUIOOz/KpOjEvja3T29wzSVgETP48T4AQ3FF6UUVqIJzSdcFjH93cCGT3ArVfs2vkfbtJEfPgU390INVvuk1XC7RACC7jD9dyhaRvou+M71YsQI+DEGaLHhUXhrL4DQbF0lEyQLYyDvY5WdlMnArHyPRAEuWL+T+FDfEldBjr8nRCEkHmHMTKUMlens/cNJxEF2hDlNryc5DHSF8Xj8m3bTm9ujqNos4Ge/BrClnw3rAe5w1vaNBlhnBYr9dF5QVt10BGHbvLkIUWmIeIDk2CLhorzTl9+FWtkblBu3Zf53BJL0qxPazkv3ov4sbro61x9wnPerBIwTr7/kbKgXkfSZE2bF25cUeoh+doZUw0NK+xIKyy0iKJXkr7c9ml2xnGc4hAGb7S16X8W26SPbFgbLqTFj9OAU4CGrQPGbF03u7FFTLBvi7lW9XUMDL46EzI6nT3KiB5+qtEVPfnW/sKIvciB5m98ZatjJPAsOa3Yc1BMAyk/40Agb9W2gSXvCMZVzPAr39D2IlsUHgPps/B+7muyyrBVS9K0aq2309kgNoYoDF6RJ0Etug4RHdBi2GECrsOzTJuV1U6sKUcboRSlrrfKZpFX4=
 script:
    # other script steps might be done before running the actual analysis
    - sonar-scanner
