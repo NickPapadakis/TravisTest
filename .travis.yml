@@ -1,15 +1,15 @@
 language: java
-jdk: openjdk8
 sudo: false
 install: true
 
 addons:
    sonarcloud:
-   organization: "continuous-integration" # the key of the org you chose at step #3
+   organization: "continuous-integration"
    token:
-      secure: "oMzM2X2syCtoFf4puHWyjZHeI7hAcKJW2QZbQiLs3VavnxC251XrZy0N/DKpSYfc7NsXCm68sNK0ONtbFy3gKSNcSPy9fX3R4wwRa05Q2tVJsFB4TV9g4vx6nGhwkpy8JYTJzMA2YCvLqkmR6XP6hD4Qh5z2is6/t4Q+Rxa2YykWDAvPyU/axLsnFjpxoOl6XuX7NKjVVsV/XhAnBcWgWv08ZMv48LBh34i5rvgh3lG/xGY6zaWE5kGpyVVrDkfgzdvG3Cn85Z65GjBSxOItUc5+CMGg3KJuWWx6STbSzd+XUmrUJgWesAzVF2tBOSbAyJT6YCNMw+9tDw3lV5JksiHBDc5koWRaVF2mB86Ci+i+4IJTp9+eUtCMpHOzNWyY6sLDEb02Ts2t6GRdg7YXXnJVKSMf2ZyawigF16RedBPZPjHJwwr1GtnD2Zx3snQfeDrY23cmuznrrFcsO8w868a2nWKuBpdwQLEkM+osXhkK8jH8DuZZmDRQg2RWAcFr8mi8x4lgWrqTVGxVN+Et7xV+B3vhO5N4EJzdhsQ6d/m04ZL8upys7t3+Uuj4ws47oh1r0gmGxWCUAy+IUi362yBD4iWPpl5HtlgGjSv4vEsOecvk8SRNQsNnihWOYtoU7vxaaDNbHt8jSoReK/cydN4EfltREmzNW1ZRTb51+qk="
+      secure: "kLApg7DVLPj436SClInxMe4sTbjc81i/LSiVs/530qwtThAVpq63sBuLiczeuQegloN2A1bUzQb8KEAgXmqXH77jIqTmHc+U/6i7WjyTx7xO+EV+tW15R8CYFhlgJIoqSH0YO9cIPSc2cRHMQntBSFziHJomjWKZX3RgzSl1IafQLhp7kZQS1UGBHCx2Ov4NeTOgwXImC0woBKCInTy9ZZefjooMfVQCmmeyJY8SuY7hFBBT7sCLyCPkJWnUyrvFuvi9dG53IFytXxQzZfmVQSfadLKD5DZj8LqPJk9SHLWoivX82zVzJKL0C/pd964HFELqN6jkTZ39zvyxlfJTuTC6KJ3NAFi4MlTfuHuXc+nlML/Rb6B9G8MtIzeiCfT8oyS+n17N41GVlThoWI+xxe30nPHhcaSWmkcb4D/KqUn815w4n1/5gqAJx8KrSSE1zNtNhp+Gcpjax0+fFJhkqM5GZwzUPcNyGXqjT8TbRHUwJy7Vi1xu7GZlojQc1m6M7ZLLKxAqopDDhIkQdA7fbOQtixNj9UO8ryatMOxTdv3kB9fixrrHsnt0wemBNtN5Qa53ZE6yU8stW3goR5MoWxfkl+Pd43cUB0w5/XpmvYcEhJSN7GU1FQ98t5tPC6icJVzU61I08QkLm2AlcSk/IIAZjpEyeDJ83tfe1Ix6d5g="
+jdk:
+   - oraclejdk8
 script:
-   # other script steps might be done before running the actual analysis
    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 cache:
   directories:
